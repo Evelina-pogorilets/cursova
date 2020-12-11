@@ -9,7 +9,6 @@ struct Ratio
 	int nom;
 	long den;
 };
-//шаблон вектор
 struct ChainFraq
 { 
 		int num;
@@ -41,17 +40,7 @@ struct ChainFraq
 			eps=fabs(x-(int)x);
 			return eps;
 		}
-		/*double ChainFraqcreaten1(int a,int y)
-		{
-			y=0;
-			do
-			{
-				cout<<a[y]<<"+1"<<endl;
-				y++;
-			}
-			while(a[y]==0);
-		}*/
-	
+
 };
 int main()
 {
@@ -82,7 +71,6 @@ int main()
 			y++;
 		}
 		while(k==0);
-		//str.ChainFraqcreaten1(a,y);
 		do
 		{
 			cout<<a[y]<<"+1"<<endl;
@@ -94,5 +82,5 @@ int main()
 	else 
 	cout<<"pomilka";
 	//string strChainFraqcreateN = to_string(str.ChainFraqcreateN(x,num));
-	//string strChainFraqcreate = to_string(str.ChainFraqcreate(x,exp));
+	//string strChainFraqcreate = to_string(str.ChainFraqcreate(x,eps));
 }
