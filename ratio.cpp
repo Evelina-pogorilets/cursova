@@ -81,6 +81,6 @@ int main()
 	}
 	else 
 	cout<<"pomilka";
-	//string strChainFraqcreateN = to_string(str.ChainFraqcreateN(x,num));
-	//string strChainFraqcreate = to_string(str.ChainFraqcreate(x,eps));
+	string strChainFraqcreateN = to_string(str.ChainFraqcreateN(x,num));
+	string strChainFraqcreate = to_string(str.ChainFraqcreate(x,eps));
 }
