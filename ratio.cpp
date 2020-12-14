@@ -4,7 +4,7 @@
 #include <set>
 #include <string>
 using namespace std;
-struct Ratio
+struct Ratio //створюю структуру ратіо
 {
 	int nom;
 	long den;
