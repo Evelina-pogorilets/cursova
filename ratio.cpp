@@ -16,7 +16,10 @@ struct ChainFraq
 		double eps; //змінна для точності представлення
 		double ChainFraqcreateN(double x,int num) //функція для переведення дробу в ланцюговий дріб
 		{
-			if(num==0)
+			if(num!=0)
+			{
+			}
+			else
 			{
 				a.push_back((int)x); //додаємо перший коефіцієнт в масив по формулі
 				x=x-a[0]; //формула для першого коефіцієнту
