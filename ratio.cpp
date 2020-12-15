@@ -57,7 +57,7 @@ int main()
 		str.ChainFraqcreateN(x,num);//визиваємо функію для обрахунку коефіцієнтів
 		str.ChainFraqcreate(x,eps); //визиваємо функцію для обрахунку точності представлення
 	}
-	if(o==2)//якщо користувач вибрав представлення дробу за допомогою коефіцієнтів
+	else if(o==2)//якщо користувач вибрав представлення дробу за допомогою коефіцієнтів
 	{
 		cout<<"vedit koeficienti\n";//виведення запиту коефіцієнтів 
 		vector<int> a;//массив для коефіцієнтів
@@ -80,7 +80,9 @@ int main()
 		str.ChainFraqcreate(x,eps);
 	}
 	else 
-	cout<<"pomilka"; //якщо користувач вводить невірне число не 1 і не 2 то помилка
+	{
+		cout<<"pomilka"; //якщо користувач вводить невірне число не 1 і не 2 то помилка
+	}
 	string strChainFraqcreateN = to_string(str.ChainFraqcreateN(x,num)); //переведення даних в стринг в мене не працює бо стара версія компілятора 
 	string strChainFraqcreate = to_string(str.ChainFraqcreate(x,eps));
 }
