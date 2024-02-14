@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Smart House</title>
+<style>
+    body {
+        background-color: yellow; /* Встановлюємо жовтий колір фону для всього документа */
+    }
+
+    .kva12 {
+        content: 1200px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column; /* Встановлюємо напрямок колонок */
+        align-items: center; /* Вирівнюємо елементи по центру */
+        height: 100vh; /* Займаємо всю висоту вікна */
+    }
+
+    .kva2, .kva1 {
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 10px; /* Додавання відступів для кращого вигляду */
+            }
+
+    .kva1 {
+        top: auto;
+        bottom: 0;
+    }
+
+    .time {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 20px;
+    }
+
+    h1, h2, button {
+        display: block; /* Встановлюємо блочне відображення */
+        margin: 10px 0; /* Додаємо зовнішні відступи */
+    }
+</style>
+</head>
+<body>
+    <div class="time" id="time"></div>
+    <ul class="kva12">
+        <h1>My smart house</h1>
+        <h2>Оберіть режим</h2>
+        <button> Standart </button>
+        <button> Setting </button>
+    </ul>
+
+    <ul class="kva1">
+        <li>
+            <h3>t вулиця</h3>
+        </li>
+    </ul>
+
+    <ul class="kva2">
+        <li>
+            <h3>t дім</h3>
+        </li>
+    </ul>
+
+    <script>
+        function updateTime() {
+            var now = new Date();
+            var hours = now.getHours();
+            var minutes = now.getMinutes();
+            var seconds = now.getSeconds();
+            var timeString = hours + ":" + minutes + ":" + seconds;
+            document.getElementById("time").innerHTML = timeString;
+        }
+
+        updateTime(); // Оновлення часу при завантаженні сторінки
+
+        setInterval(updateTime, 1000); // Оновлення часу кожну секунду
+    </script>
+</body>
+</html>
